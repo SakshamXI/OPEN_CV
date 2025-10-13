@@ -16,14 +16,13 @@ while camera.isOpened():
         index = (int(lm[12].x * w), int(lm[12].y * h))
         thumb = (int(lm[4].x * w), int(lm[4].y * h))
         length = int(((index[0] - thumb[0])**2 + (index[1] - thumb[1])**2) ** 0.5)
-        '''cv2.circle(frame,index,5,[0]*3,-1)
+        cv2.circle(frame,index,5,[0]*3,-1)
         cv2.circle(frame, thumb, 5, [0] * 3, -1)
-        cv2.line(frame,index,thumb,[0]*3,3)'''
+        cv2.line(frame,index,thumb,[0]*3,3)
 
-        if prev is not None:
+        if prev :
             delta = (length - prev) // 3
             if abs(delta) > 5:
-                print(delta)
                 if delta > 0:
                     pg.press("volumeup", presses=delta)
                 else:
@@ -31,8 +30,9 @@ while camera.isOpened():
         prev = length
     else:
         prev = None
-    #cv2.imshow("Image",frame)
+    #cv2.imshow("Image",frame)                 # Uncomment it , if you want to see your video
     if cv2.waitKey(1) & 0xFF == 27:
         break
 camera.release()
 cv2.destroyAllWindows()
+
