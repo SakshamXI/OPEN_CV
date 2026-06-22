@@ -5,7 +5,11 @@ Real-time augmented reality face filters built using **OpenCV**, **NumPy**, and 
 FaceFilterAR detects facial landmarks in real time and automatically scales, rotates, and positions PNG overlays such as glasses, hats, masks, and beards onto a user's face.
 
 ---
+## Demo
 
+![Demo](assets/demo.gif)
+
+---
 ## Features
 
 * Glasses Filters
@@ -114,11 +118,7 @@ The webcam will open and the selected face filter will automatically follow your
 
 ---
 
-## Demo
 
-![Demo](assets/demo.gif)
-
----
 
 ## Future Improvements
 
