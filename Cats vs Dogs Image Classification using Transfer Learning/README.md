@@ -1,13 +1,15 @@
 # Cats vs Dogs Image Classification using Transfer Learning (MobileNetV2)
 
 
-<p align="center">
-  <img src="images/demo.gif" alt="Project Demo" width="700">
-</p>
+
 
 ## Project Overview
 
 This project classifies images as either **Cat** or **Dog** using **Transfer Learning** with MobileNetV2. The pretrained MobileNetV2 model is used as a feature extractor, while a custom classification layer is trained on the Cats vs Dogs dataset.
+## Demo
+<p align="center">
+  <img src="images/demo.gif" alt="Project Demo" width="700">
+</p>
 
 ## Features
 
